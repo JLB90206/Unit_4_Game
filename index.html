@@ -12,80 +12,71 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Link for StyleSheet-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <link type="text/javascript" href="assets/actions/game.js"></link>
 </head>
 
 <body>
     <div id="mainBody" class="container">
 
-        <!--Main columns-->
 
-        <div class="col-md-6">
-            
-            <!--Header Row-->
-             <div id="headerContainer" class="container">
+        <!--Header Row-->
+        <div id="headerContainer">
 
-                <h1 id="mainHeader">Crystal Collector Game</h1>
-            </div>
-            <!--Main Body Text-->
-            <div id="pa1" class="row">
-                <p>You will be given a random number at the start of the game.</p>
-            </div>
-            <div id="pa2" class="row">
-                <p>There are four crystals below. By clicking on the crystal you will add a specific amount of points to
-                    your total score.</p>
-            </div>
-            <div id="pa3" class="row">
-                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-            </div>
-            <div id="pa4" class="row">
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-            </div>
-            <div id="pa5" class="row">
-                <p>Each time when the game starts, the game will change the values of each crystal.</p>
-            </div>
-            <div id="crystals" class="container">
-            <div class ="row">
-            <div class = "col-xs-3">
-                <p><img src= assets/images/Crystal1.jpg></p></div>
-            <div class ="col-xs-3">
-                <p><img src= assets/images/Crystal2.jpg></p></div>
-            <div class ="col-xs-3">
-                <p><img src= assets/images/Crystal3.png></p></div>
-            <div class ="col-xs-3">
-                <p><img src= assets/images/Crystal4.jpg></p></div>
-            </div>
-            </div>
-
-            <div id="pa6" class ="row" class="col-xs-6">
-            <div class ="container"><p>Numbers in here</p></div> 
-            <div class ="container"><p>Numbers in here</p></div>    
-            </div>
-            <div id="pa7" class ="row">
-                    <div class ="container"><p>More numbers in here</p></div>
-            </div>
-            <div id="pa8" class ="row">
-                    <div class ="container"><p>Even more numbers maybe in here?</p></div>
-            </div>
-
-
-
+            <h1 id="mainHeader">Crystal Collector Game</h1>
+        </div>
+        <!--Main Body Text-->
+        <div id="instructions" class="container">
+            <li>You will be given a random number at the start of the game.</li>
+            <li>There are four crystals below. By clicking on the crystal you will add a specific amount of points
+                to your total score.</l1>
+            <li>You win the game by matching your total score to random number, you lose the game if your total
+                score goes above the random number.</li>
+            <li>The value of each crystal is hidden from you until you click on it.</li>
+            <li>Each time when the game starts, the game will change the values of each crystal.</li>
 
         </div>
+        <div id="crystals" class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <button id="Crystal1"> <img src=assets/images/Crystal1.jpg></button> </div> 
+                    <div class="col-xs-3">
+                        <button id="Crystal2"> <img src=assets/images/Crystal2.jpg></button> </div> 
+                        <div class="col-xs-3">
+                            <button id="Crystal3"> <img src=assets/images/Crystal3.png></button> </div> 
+                            <div class="col-xs-3">
+                                <button id="Crystal4"> <img src=assets/images/Crystal4.jpg></button> </div> </div> </div></div>
+                                
+                                <div
+                                id="randomNumber">
+                                <p>Random Number:</p>
+                            </div>
+
+                <div id="totalScore">
+                    <p>Your total score is:</p>
+                </div>
+            </div>
+        </div>
+        <div id="wins">
+            <p>Wins:</p></div>
+
+        <div id="losses">
+            <p>Losses:</p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    </div>
     </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
 </body>
 
 </html>

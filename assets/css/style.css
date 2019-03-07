@@ -1,41 +1,47 @@
 body {
     background-image: url("https://blog.walkerinfo.com/wp-content/uploads/2018/04/dabbing-unicorn-e1523307747384.jpg");
     color: purple;
-    align-content: center;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     padding-left: 40%;
 }
 
 #headerContainer {
     background-color: yellow;
+    text-align: center;
 }
 
-#pa1 {
+#instructions {
     background-color: pink;
-}
-
-#pa2 {
-    background-color: turquoise;
-}
-
-#pa3 {
-    background-color: palevioletred;
-    color: blue;
-}
-
-#pa4 {
-    background-color: blueviolet;
-    color: blue;
-}
-
-#pa5 {
-    background-color: yellowgreen;
 }
 
 #crystals {
     height: 150px;
     width: 1000px;
-    padding-right: 400px;
-    align-content: left;
+    float: left;
+    padding-top: 25px;
+   
+}
+
+#randomNumber {
+    background-color: turquoise;
+    clear: both;
+}
+
+#totalScore {
+
+background-color: lightblue;
+
+}
+
+#wins {
+
+background-color: lightgreen;
+
+}
+
+#losses {
+
+background-color: lightgreen;
+
 }
